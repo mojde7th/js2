@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="alert alert-warning alert-dismissible fade show px-5" role="alert" style="font-size: 20px;">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong class="text-xxl-center">JavaScript</strong>
+        <hr> let x=10;<br>
+        alert(x);<br>
+        alert("hii");<br>
+        console.log("x=",x);<br>
+        let data={fname:"mojde",lname:"eb"}
+        console.log(data);<br>
+        console.table(data);<br>
+        alert(data.fname+" "+data.lname);<br>
+        <div class="text-bg-dark p-3 mt-3">console.log(document);<br>
+            console.log(typeof document);<br></div>
+        <div class="text-bg-dark p-3 mt-3">document.write("&lt;h1&gt;It is Written with document.write method&lt;/h1&gt;");<br>
+        </div>
+        <div class="text-bg-dark p-3 mt-3">document.querySelector(
+        "div#root"
+        ).innerHTML = `&lt;
+        h1 class="p-1"&gtHi this is with: &lt;
+        /h1&gt &ltstrong class="bg-info p-1 ms-5 mt-5"&gtdocument.querySelector("div#root").innerHTML&lt;
+        /strong&gt;<br>
+        &lt;hr&gt`;<br>
+
+        </div>
+    </div>
+<div id="root"></div>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js">
+
+    </script>
+</body>
+
+</html>
