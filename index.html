@@ -2,45 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./bootstrap.min.css">
 
 </head>
 
 <body>
-    <div class="alert alert-warning alert-dismissible fade show px-5" role="alert" style="font-size: 20px;">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <strong class="text-xxl-center">JavaScript</strong>
-        <hr> let x=10;<br>
-        alert(x);<br>
-        alert("hii");<br>
-        console.log("x=",x);<br>
-        let data={fname:"mojde",lname:"eb"}
-        console.log(data);<br>
-        console.table(data);<br>
-        alert(data.fname+" "+data.lname);<br>
-        <div class="text-bg-dark p-3 mt-3">console.log(document);<br>
-            console.log(typeof document);<br></div>
-        <div class="text-bg-dark p-3 mt-3">document.write("&lt;h1&gt;It is Written with document.write method&lt;/h1&gt;");<br>
-        </div>
-        <div class="text-bg-dark p-3 mt-3">document.querySelector(
-        "div#root"
-        ).innerHTML = `&lt;
-        h1 class="p-1"&gtHi this is with: &lt;
-        /h1&gt &ltstrong class="bg-info p-1 ms-5 mt-5"&gtdocument.querySelector("div#root").innerHTML&lt;
-        /strong&gt;<br>
-        &lt;hr&gt`;<br>
+  <div class="alert alert-dark alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>javaScript</strong> <br>console.log(Math.PI);
+  </div>
+  <div class="alert alert-dark alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>javaScript</strong> <br>x += y;<br>
+    console.log("x is 10 and y is 20 x+=y is x=10+20, so x is: ",x);<br>
+    x -= y;<br>
+    console.log("x is now 30 and y is 20 x-=y is x=30-20, so x is: ", x);<br>
+    x *= y;<br>
+    console.log("x is now 10 and y is 20 x*=y is x=10*20, so x is: ", x);<br>
+    x /= y;<br>
+    console.log("x is now 200 and y is 20 x/=y is x=200/20, so x is: ", x);<br>
+    x %= y;<br>
+    console.log("x is now 10 and y is 20 x%=y is x=10%20, so x is: ", x);<br>
+    let sum = x + y;<br>
+    let sub = x - y;<br>
+    let mul = x * y;<br>
+    let div = x / y;<br>
+    let rem = x % y;<br>
+    let pow = x ** y;<br>
+    console.log(
+    "*** sum of 10 and 20 is " +
+    sum +
+    "*** sub of 10 and 20 is " +
+    sub +
+    "*** mul of 10 and 20 is " +
+    mul +
+    "*** div of 10 and 20 is " +
+    div +
+    "*** rem of 10 and 20 is " +
+    rem +
+    "*** pow of 10 and 20 is " +
+    pow
+    );
+  </div>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <strong>javaScript</strong> <br>
+    console.log(`my name is ${firstName} and my lastname is ${lastName} and now backtick is used for concating ${age}
+    and
+    ${fatherName}`);
+    <br>
+    <strong>Casting in javascript</strong> <br>
 
-        </div>
-    </div>
-<div id="root"></div>
-    <script src="./bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js">
+    let t= "30";<br>
+    let k=+30;<br>
+    console.log(
+    `type of t let t= "30" is string and type of k let k=+30 is number`
+    );
+  </div>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
-    </script>
+    <strong>Casting in javascript</strong> <br>
+
+    let Numberprompt1 = prompt("xx...!", "---");<br>
+    let Numberprompt2 = prompt("yy...!");<br>
+    alert(`let Numberprompt1 = prompt("xx...!", "---");<br>
+    let Numberprompt2 = prompt("yy...!");<br> sum is: ${Numberprompt1 + Numberprompt2} : 80 and 100 is 80100`);<br>
+    let Numberprompt11 = Number(prompt("my num...!"));<br>
+    let Numberprompt22 = Number(prompt("yy...!"));<br>
+    alert(
+    `let Numberprompt11 = Number(prompt("my num...!"));<br> let Numberprompt22 = Number(prompt("yy...!"));<br> sum is:
+    ${
+    Numberprompt11 + Numberprompt22
+    } : 80 and 100 is 180`
+    );<br>
+  </div>
+
+
+
+  <script src="./js/main.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
